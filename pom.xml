@@ -853,22 +853,22 @@
               </execution>
             </executions>
           </plugin>
-            <plugin>
-                <groupId>org.cyclonedx</groupId>
-                <artifactId>cyclonedx-maven-plugin</artifactId>
-                 <version>2.6.2</version>
-                 <executions>
-                    <execution>
-                       <phase>package</phase>
-                       <goals>
+          <plugin>
+              <groupId>org.cyclonedx</groupId>
+              <artifactId>cyclonedx-maven-plugin</artifactId>
+              <version>2.6.2</version>
+              <executions>
+                  <execution>
+                      <phase>package</phase>
+                      <goals>
                           <goal>makeAggregateBom</goal>
                        </goals>
-                    </execution>
-                 </executions>
-                 <configuration>
-                     <outputFormat>Json</outputFormat>
-                 </configuration>
-              </plugin>  
+                   </execution>
+                </executions>
+                <configuration>
+                    <outputFormat>Json</outputFormat>
+                </configuration>
+            </plugin>  
             </plugins>
       </build>
     </profile>
